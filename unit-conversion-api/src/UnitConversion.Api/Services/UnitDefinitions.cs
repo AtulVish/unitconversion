@@ -17,7 +17,7 @@ namespace UnitConversion.Api.Services
 
     public static class UnitDefinitions
     {
-        // Base units: Length -> meter, Weight -> kilogram, Temperature -> Celsius (base for formulas)
+        // Base units: Length -> meter, Weight -> kilogram, Temperature -> Celsius
         public static readonly IReadOnlyDictionary<string, UnitDefinition> Units =
             new Dictionary<string, UnitDefinition>(StringComparer.OrdinalIgnoreCase)
             {
@@ -43,23 +43,25 @@ namespace UnitConversion.Api.Services
                 ["ounce"] = new UnitDefinition("ounce", UnitCategory.Weight, 0.0283495231, null, null),
                 ["oz"] = new UnitDefinition("oz", UnitCategory.Weight, 0.0283495231, null, null),
 
-                // Temperature (base: celsius) - use functions
+                // Temperature (base: Celsius)
                 ["celsius"] = new UnitDefinition("celsius", UnitCategory.Temperature, null,
-                    toBaseFunc: v => v, fromBaseFunc: v => v),
+                    ToBaseFunc: v => v, FromBaseFunc: v => v),
                 ["c"] = new UnitDefinition("c", UnitCategory.Temperature, null,
-                    toBaseFunc: v => v, fromBaseFunc: v => v),
+                    ToBaseFunc: v => v, FromBaseFunc: v => v),
+
                 ["fahrenheit"] = new UnitDefinition("fahrenheit", UnitCategory.Temperature, null,
-                    toBaseFunc: v => (v - 32.0) * 5.0/9.0,
-                    fromBaseFunc: v => (v * 9.0/5.0) + 32.0),
+                    ToBaseFunc: v => (v - 32.0) * 5.0 / 9.0,
+                    FromBaseFunc: v => (v * 9.0 / 5.0) + 32.0),
                 ["f"] = new UnitDefinition("f", UnitCategory.Temperature, null,
-                    toBaseFunc: v => (v - 32.0) * 5.0/9.0,
-                    fromBaseFunc: v => (v * 9.0/5.0) + 32.0),
+                    ToBaseFunc: v => (v - 32.0) * 5.0 / 9.0,
+                    FromBaseFunc: v => (v * 9.0 / 5.0) + 32.0),
+
                 ["kelvin"] = new UnitDefinition("kelvin", UnitCategory.Temperature, null,
-                    toBaseFunc: v => v - 273.15,
-                    fromBaseFunc: v => v + 273.15),
+                    ToBaseFunc: v => v - 273.15,
+                    FromBaseFunc: v => v + 273.15),
                 ["k"] = new UnitDefinition("k", UnitCategory.Temperature, null,
-                    toBaseFunc: v => v - 273.15,
-                    fromBaseFunc: v => v + 273.15),
+                    ToBaseFunc: v => v - 273.15,
+                    FromBaseFunc: v => v + 273.15),
             };
     }
 }

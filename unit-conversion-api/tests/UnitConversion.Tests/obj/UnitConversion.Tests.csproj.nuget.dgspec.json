@@ -1,7 +1,7 @@
 {
   "format": 1,
   "restore": {
-    "c:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj": {}
+    "C:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj": {}
   },
   "projects": {
     "C:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\src\\UnitConversion.Api\\UnitConversion.Api.csproj": {
@@ -42,6 +42,12 @@
       "frameworks": {
         "net8.0": {
           "targetAlias": "net8.0",
+          "dependencies": {
+            "Swashbuckle.AspNetCore": {
+              "target": "Package",
+              "version": "[9.0.6, )"
+            }
+          },
           "imports": [
             "net461",
             "net462",
@@ -65,14 +71,14 @@
         }
       }
     },
-    "c:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj": {
+    "C:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "c:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj",
+        "projectUniqueName": "C:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj",
         "projectName": "UnitConversion.Tests",
-        "projectPath": "c:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj",
+        "projectPath": "C:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\UnitConversion.Tests.csproj",
         "packagesPath": "C:\\Users\\a821319\\.nuget\\packages\\",
-        "outputPath": "c:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\obj\\",
+        "outputPath": "C:\\Users\\a821319\\OneDrive\\repos\\unitconversion\\unit-conversion-api\\tests\\UnitConversion.Tests\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\a821319\\AppData\\Roaming\\NuGet\\NuGet.Config"
